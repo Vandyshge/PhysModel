@@ -22,7 +22,7 @@ def graphic_E(voc_E, name_folder):
 	ax.set(xlabel='time', ylabel='E',
 	       title='Полная энергия системы')
 	ax.grid()
-	fig.savefig('C:/Users/Xiaomi/PhysModel/Gas/forovito{}/E.png'.format(name_folder))
+	fig.savefig('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/E.png'.format(name_folder))
 	plt.show()
 
 def graphic_p(voc_p, name_folder):
@@ -33,5 +33,5 @@ def graphic_p(voc_p, name_folder):
 	ax.set(xlabel='time', ylabel='p',
 	       title='Полный импульс системы')
 	ax.grid()
-	fig.savefig('C:/Users/Xiaomi/PhysModel/Gas/forovito{}/p.png'.format(name_folder))
+	fig.savefig('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/p.png'.format(name_folder))
 	plt.show()
