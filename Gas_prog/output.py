@@ -8,6 +8,11 @@ def output_enegy(name_folder, epoch, E):
     out = open('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/E.txt'.format(name_folder), 'a')
     out.write("{} {}\n".format(epoch, E))
     out.close()
+
+def output_ep_enegy(name_folder, epoch, ep_E): 
+    out = open('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/ep_E.txt'.format(name_folder), 'a')
+    out.write("{} {}\n".format(epoch, ep_E))
+    out.close()
     
 def output_momentum(name_folder, epoch, p):
     out = open('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/p.txt'.format(name_folder), 'a')

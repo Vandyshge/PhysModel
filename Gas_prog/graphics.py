@@ -35,3 +35,13 @@ def graphic_p(voc_p, name_folder):
 	ax.grid()
 	fig.savefig('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/p.png'.format(name_folder))
 	plt.show()
+
+def graphic_ep_E(voc_ep_E, name_folder):
+	voc_time = np.arange(0, sec, dt)
+	fig, ax = plt.subplots()
+	ax.plot(voc_time, np.array(voc_ep_E))
+	ax.set(xlabel='time', ylabel='dE/E',
+	       title='Относительное изменение полной энергии')
+	ax.grid()
+	fig.savefig('C:/Users/Xiaomi/PhysModelNew/output/forovito{}/ep_E.png'.format(name_folder))
+	plt.show()
